@@ -9,6 +9,9 @@
   home.file.".config/hypr/hyprlock.conf".source = ./hyprlock.conf;
   home.file.".config/hypr/hyprlock.conf".force = true;
 
+  home.file.".config/hypr/mocha.conf".source = ./mocha.conf;
+  home.file.".config/hypr/mocha.conf".force = true;
+
   home.file.".local/share/icons/catppuccin-mocha-dark-cursors".source = ./catppuccin-mocha-dark-cursors;
   home.file.".local/share/icons/catppuccin-mocha-dark-cursors".force = true;
 
