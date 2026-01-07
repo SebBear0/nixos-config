@@ -155,6 +155,9 @@
     gh
   ];
 
+  # Set Neovim as the default editor
+  environment.variables.EDITOR = "nvim";
+
   # CLI tool to get the battery power
   services.upower.enable = true;
 

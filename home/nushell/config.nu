@@ -9,7 +9,7 @@ def --env y [...args] {
   rm -fp $tmp
 }
 
-$env.config.buffer_editor = "vim"
+$env.config.buffer_editor = "nvim"
 $env.config.show_banner = false
 
 # battery life helper
