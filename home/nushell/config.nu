@@ -33,6 +33,11 @@ def battery [] {
   $"($percentage)% \(($time_remaining)\)"
 }
 
+# Enter nushell instance with administrator priviledges
+def sudosh [] {
+  sudo -E -s nu
+}
+
 # catppuccin theme
 source ~/nu_scripts/themes/catppuccin-mocha.nu
 
