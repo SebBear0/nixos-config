@@ -1,0 +1,9 @@
+# Nushell as default
+shell-integration = none
+command = nu
+
+theme = catppuccin-mocha.conf
+font-family = "MonaspiceNe Nerd Font"
+
+# This may decrease ghostty startup times, hopefully
+gtk-single-instance = true
