@@ -145,7 +145,10 @@
     wget
     wofi
     obsidian
-    graphicsmagick
+
+    graphicsmagick # `gm` CLI for image manipulation
+    libjxl # Allows `gm` to read/write JXL images
+
     hyprpaper # For wallpaper 
     upower
     wiremix # TUI to configure PipeWire
