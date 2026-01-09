@@ -153,6 +153,7 @@
     upower
     wiremix # TUI to configure PipeWire
     bluetui # TUI to configure Bluetooth
+    bottom # TUI for system monitoring
     wl-clipboard
 
     gh
