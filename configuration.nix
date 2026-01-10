@@ -154,6 +154,7 @@
     wiremix # TUI to configure PipeWire
     bluetui # TUI to configure Bluetooth
     bottom # TUI for system monitoring
+    impala # TUI for wifi
     wl-clipboard
 
     gh
