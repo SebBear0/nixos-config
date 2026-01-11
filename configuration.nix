@@ -167,6 +167,8 @@
     impala # TUI for wifi
     wl-clipboard
 
+    rustup
+
     gh
   ];
 
