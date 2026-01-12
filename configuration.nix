@@ -168,7 +168,13 @@
     wl-clipboard
 
     rustup
+
+    # For neovim
     ripgrep
+    gnumake
+    unzip
+    luajit
+    luajitPackages.luarocks
 
     gh
   ];
