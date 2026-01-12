@@ -177,6 +177,7 @@
     lua51Packages.luarocks
     tree-sitter
     gcc
+    fd
 
     gh
   ];
