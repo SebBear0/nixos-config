@@ -173,8 +173,8 @@
     ripgrep
     gnumake
     unzip
-    luajit
-    luajitPackages.luarocks
+    lua5_1
+    lua51Packages.luarocks
 
     gh
   ];
