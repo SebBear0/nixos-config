@@ -43,3 +43,5 @@ source ~/nu_scripts/themes/catppuccin-mocha.nu
 
 # vi mode
 $env.config.edit_mode = 'vi'
+
+alias vi = nvim
