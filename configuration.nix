@@ -168,6 +168,7 @@
     wl-clipboard
 
     rustup
+    ripgrep
 
     gh
   ];
