@@ -7,7 +7,6 @@
   home.file.".config/yazi/theme.toml".force = true;
 
   home.file.".config/yazi/flavors".source = ./flavors;
-  home.file.".config/yazi/flavors".recursive = true;
   home.file.".config/yazi/flavors".force = true;
 }
 
