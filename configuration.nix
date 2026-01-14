@@ -2,14 +2,19 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, inputs, ... }:
+{
+  config,
+  pkgs,
+  inputs,
+  ...
+}:
 
 {
-  imports =
-    [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
-      inputs.home-manager.nixosModules.default
-    ];
+  imports = [
+    # Include the results of the hardware scan.
+    ./hardware-configuration.nix
+    inputs.home-manager.nixosModules.default
+  ];
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
@@ -20,7 +25,7 @@
 
   networking.hostName = "nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
-  networking.wireless.iwd.enable = true;  # Enables wireless support via wpa_supplicant.
+  networking.wireless.iwd.enable = true; # Enables wireless support via wpa_supplicant.
   networking.wireless.iwd.settings = {
     Network = {
       EnableIPv6 = true;
@@ -31,7 +36,10 @@
   };
 
   # Enable flakes
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  nix.settings.experimental-features = [
+    "nix-command"
+    "flakes"
+  ];
 
   # Configure network proxy if necessary
   # networking.proxy.default = "http://user:password@proxy:port/";
@@ -39,7 +47,6 @@
 
   # Enable networking
   # networking.networkmanager.enable = true;
-
 
   # Set your time zone.
   time.timeZone = "Australia/Melbourne";
@@ -102,16 +109,19 @@
   users.users.seb = {
     isNormalUser = true;
     description = "Seb Bearsley";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [
+      "networkmanager"
+      "wheel"
+    ];
     packages = with pkgs; [
-    #  kdePackages.kate
-    #  thunderbird
+      #  kdePackages.kate
+      #  thunderbird
     ];
   };
 
   home-manager = {
     # also pass inputs to home-manager modules
-    extraSpecialArgs = {inherit inputs;};
+    extraSpecialArgs = { inherit inputs; };
     users = {
       "seb" = import ./home;
     };
@@ -144,7 +154,6 @@
   # Install yazi
   programs.yazi.enable = true;
 
-
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
@@ -160,7 +169,7 @@
     graphicsmagick # `gm` CLI for image manipulation
     libjxl # Allows `gm` to read/write JXL images
 
-    hyprpaper # For wallpaper 
+    hyprpaper # For wallpaper
     upower
     wiremix # TUI to configure PipeWire
     bluetui # TUI to configure Bluetooth
@@ -169,6 +178,7 @@
     wl-clipboard
 
     rustup
+    nixfmt-rfc-style
 
     # For neovim
     ripgrep
@@ -197,7 +207,7 @@
     settings = {
       CPU_SCALING_GOVERNOR_ON_AC = "performance";
       CPU_SCALING_GOVERNOR_ON_BAT = "powersave";
-      
+
       CPU_ENERGY_PERF_POLICY_ON_BAT = "power";
       CPU_ENERGY_PERF_POLICY_ON_AC = "performance";
 
