@@ -179,6 +179,8 @@
     gcc
     fd
 
+    taplo # TOML toolkit
+
     gh
   ];
 
