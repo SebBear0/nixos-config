@@ -155,6 +155,7 @@
     wget
     wofi
     obsidian
+    openssl
 
     graphicsmagick # `gm` CLI for image manipulation
     libjxl # Allows `gm` to read/write JXL images
