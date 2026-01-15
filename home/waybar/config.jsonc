@@ -23,10 +23,11 @@
         "max-length": 50
     },
     "clock": {
+        "interval":1,
         "timezone": "Australia/Melbourne",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%d/%m/%Y}",
-        "format": "{:%H:%M %d/%m}"
+        "format": "{:%H:%M %d/%m}",
+        "format-alt": "{:%I:%M:%S %p}"
     },
     "backlight": {
         "device": "intel_backlight",
@@ -40,7 +41,7 @@
         },
         "format": "{capacity}%",
         "format-charging": "{capacity}% ",
-        "format-plugged": "{capacity}% ",
+        "format-plugged": "{capacity}% "
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
@@ -54,7 +55,7 @@
     "custom/lock": {
         "tooltip": false,
         "on-click": "sh -c '(sleep 0.5s; swaylock --grace 0)' & disown",
-        "format": "",
+        "format": ""
     },
     "custom/power": {
         "tooltip": false,
