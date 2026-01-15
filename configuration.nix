@@ -161,6 +161,7 @@
     wget
     wofi
     obsidian
+    typst
     openssl
 
     graphicsmagick # `gm` CLI for image manipulation
