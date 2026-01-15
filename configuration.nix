@@ -151,9 +151,6 @@
     };
   };
 
-  # Install yazi
-  programs.yazi.enable = true;
-
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 

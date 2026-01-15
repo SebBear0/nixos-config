@@ -8,17 +8,36 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    yazi.url = "github:sxyazi/yazi";
   };
 
-  outputs = { self, nixpkgs, ... }@inputs: {
-    # use "nixos", or your hostname as the name of the configuration
-    # it's a better practice than "default" shown in the video
-    nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
-      specialArgs = {inherit inputs;};
-      modules = [
-        ./configuration.nix
-        inputs.home-manager.nixosModules.default
-      ];
+  outputs =
+    {
+      self,
+      nixpkgs,
+      yazi,
+      ...
+    }@inputs:
+    {
+      # use "nixos", or your hostname as the name of the configuration
+      # it's a better practice than "default" shown in the video
+      nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
+        specialArgs = { inherit inputs; };
+        modules = [
+          ./configuration.nix
+          inputs.home-manager.nixosModules.default
+          (
+            { pkgs, ... }:
+            {
+              environment.systemPackages = [
+                (yazi.packages.${pkgs.system}.default.override {
+                  _7zz = pkgs._7zz-rar; # Support for RAR extraction
+                })
+              ];
+            }
+          )
+        ];
+      };
     };
-  };
 }
