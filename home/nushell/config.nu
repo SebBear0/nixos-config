@@ -35,7 +35,7 @@ def battery [] {
 
 # Enter nushell instance with administrator priviledges
 def sudosh [] {
-  sudo -E -s nu
+  sudo HOME=/home/seb nu
 }
 
 # catppuccin theme
