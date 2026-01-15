@@ -161,6 +161,7 @@
     wget
     wofi
     obsidian
+    zathura # PDF viewer
     typst
     openssl
 
