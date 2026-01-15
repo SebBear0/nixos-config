@@ -178,7 +178,8 @@
 
     rustup
     tinymist
-    nixfmt-rfc-style
+    nil # Nix LSP
+    nixfmt-rfc-style # Nix formatter
 
     # For neovim
     ripgrep
