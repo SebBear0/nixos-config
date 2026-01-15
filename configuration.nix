@@ -177,6 +177,7 @@
     wl-clipboard
 
     rustup
+    tinymist
     nixfmt-rfc-style
 
     # For neovim
