@@ -175,6 +175,7 @@
     bottom # TUI for system monitoring
     impala # TUI for wifi
     wl-clipboard
+    xdg-desktop-portal-termfilechooser
 
     rustup
     tinymist
