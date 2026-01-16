@@ -88,5 +88,15 @@
 
   xdg.autostart.enable = true; # Enable creation of XDG autostart entries.
 
-  imports = [ ./hyprland ./yazi ./nushell ./ghostty ./waybar ./git ./jujutsu ./neovim ];
+  imports = [
+    ./hyprland
+    ./yazi
+    ./nushell
+    ./ghostty
+    ./waybar
+    ./git
+    ./jujutsu
+    ./neovim
+    ./xdg-desktop
+  ];
 }
