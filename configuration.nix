@@ -181,6 +181,7 @@
     tinymist
     nil # Nix LSP
     nixfmt-rfc-style # Nix formatter
+    lua-language-server # Lua LSP
 
     # For neovim
     ripgrep
