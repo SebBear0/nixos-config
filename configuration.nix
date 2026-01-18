@@ -178,11 +178,12 @@
     xdg-desktop-portal-termfilechooser
 
     rustup
-    tinymist
+    tinymist # Typst LSP
+    typstyle # Typst formatter
     nil # Nix LSP
     nixfmt-rfc-style # Nix formatter
     lua-language-server # Lua LSP
-    stylua
+    stylua # Lua formatter
 
     # For neovim
     ripgrep
