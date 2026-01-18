@@ -182,6 +182,7 @@
     nil # Nix LSP
     nixfmt-rfc-style # Nix formatter
     lua-language-server # Lua LSP
+    stylua
 
     # For neovim
     ripgrep
