@@ -36,10 +36,21 @@
           inputs.home-manager.nixosModules.default
           (
             { pkgs, ... }:
+            let
+              rust-bin = pkgs.rust-bin.selectLatestNightlyWith (
+                toolchain:
+                toolchain.default.override {
+                  extensions = [
+                    "rust-src"
+                    "rust-analyzer"
+                  ];
+                }
+              );
+            in
             {
               nixpkgs.overlays = [ rust-overlay.overlays.default ];
               environment.systemPackages = [
-                pkgs.rust-bin.stable.latest.default
+                rust-bin
                 (yazi.packages.${pkgs.system}.default.override {
                   _7zz = pkgs._7zz-rar; # Support for RAR extraction
                 })
