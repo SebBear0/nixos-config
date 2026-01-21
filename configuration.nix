@@ -177,8 +177,6 @@
     wl-clipboard
     xdg-desktop-portal-termfilechooser
 
-    rustup
-    rust-analyzer
     tinymist # Typst LSP
     typstyle # Typst formatter
     nil # Nix LSP
