@@ -194,6 +194,8 @@
     gcc
     fd
 
+    bat
+
     taplo # TOML toolkit
 
     gh
