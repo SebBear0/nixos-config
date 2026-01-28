@@ -194,6 +194,8 @@
     gcc
     fd
 
+    localsend # AirDrop equivalent
+
     bat
 
     taplo # TOML toolkit
