@@ -195,7 +195,6 @@
     fd
 
     localsend # AirDrop equivalent
-    ncspot # Spotify TUI
 
     bat
 
