@@ -197,6 +197,7 @@
     localsend # AirDrop equivalent
 
     bat
+    dust
 
     taplo # TOML toolkit
 
