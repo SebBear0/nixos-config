@@ -74,6 +74,8 @@
   # services.displayManager.sddm.enable = true;
   # services.desktopManager.plasma6.enable = true;
 
+  services.dbus.enable = true;
+
   # Configure keymap in X11
   services.xserver.xkb = {
     layout = "us";
@@ -167,6 +169,7 @@
     zathura # PDF viewer
     typst
     openssl
+    libsecret
 
     graphicsmagick # `gm` CLI for image manipulation
     libjxl # Allows `gm` to read/write JXL images
