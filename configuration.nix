@@ -86,6 +86,9 @@
   # Enable bluetooth
   hardware.bluetooth.enable = true;
 
+  # Enable fingerprint reader
+  services.fprintd.enable = true;
+
   # Enable sound with pipewire.
   services.pulseaudio.enable = false;
   security.rtkit.enable = true;
